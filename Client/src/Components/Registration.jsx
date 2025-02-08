@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PaymentSection from "./PaymentSection";
 import Input from "./Input";
 import FormAction from "./FormAction";
-import { registrationFields } from "../constants/registrationFields";
+import { registrationFields } from "../Constants/RegistrationField";
 
 let initialState = {};
 registrationFields.forEach(field => (initialState[field.id] = ""));
