@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
-import Registration from "../components/Registration";
+import Header from "../Components/Header";
+import Registration from "../Components/Registration";
 
 export default function RegisterPage() {
   return (
