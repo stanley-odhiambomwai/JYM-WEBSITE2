@@ -4,7 +4,7 @@ import Activities from "../Components/Activities";
 
 export default function ActivitiesPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mt-15">
       <Header
         heading="JYM Activities"
         paragraph="View the latest and previous activities."

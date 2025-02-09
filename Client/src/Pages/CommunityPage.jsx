@@ -4,7 +4,7 @@ import Community from "../Components/Community";
 
 export default function CommunityPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mt-15">
       <Header
         heading="Community"
         paragraph="Share your ideas and interact with fellow users."

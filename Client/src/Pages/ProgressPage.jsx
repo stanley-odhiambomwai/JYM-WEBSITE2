@@ -4,7 +4,7 @@ import ProgressTracker from "../Components/ProgressTracker";
 
 export default function ProgressPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mt-15">
       <Header
         heading="Progress Tracker"
         paragraph="Keep track of your daily exercise progress."
