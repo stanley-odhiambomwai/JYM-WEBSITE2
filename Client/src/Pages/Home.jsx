@@ -3,7 +3,7 @@ import { Link } from "react-router";
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
-      <h1 className="text-5xl font-bold mb-6">Welcome to JIM</h1>
+      <h1 className="text-5xl font-bold mb-6">Welcome to JYM Website.! The path to your fitness.</h1>
       <p className="text-lg text-center mb-6">
         Join our platform to stay fit, track your progress, and interact with a vibrant community.
       </p>
