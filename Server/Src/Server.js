@@ -2,15 +2,27 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser";
+import authRoutes from "./routes/auth.js";
+import activitiesRoutes from "./Routes/Activities.js";
+import progressRoutes from "./Routes/Progress.js";
+import communityRoutes from "./Routes/Community.js";
+
 
 dotenv.config();
 const app = express();
 
 const PORT = process.env.PORT || 5000;
+connectDB();
 
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
+
+app.use("/api/auth", authRoutes);
+app.use("/api/activities", activitiesRoutes);
+app.use("/api/progress", progressRoutes);
+app.use("/api/community", communityRoutes);
+
 
 app.get("/", (req, res) => {
   res.send("JYM Backend API is running");
