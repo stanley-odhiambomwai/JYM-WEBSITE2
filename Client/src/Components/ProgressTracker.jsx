@@ -11,7 +11,7 @@ export default function ProgressTracker() {
       <h2 className="text-3xl font-bold mb-4">Your Exercise Progress</h2>
       <table className="min-w-full bg-white border border-gray-300">
         <thead>
-          <tr>
+          <tr >
             <th className="py-2 px-4 border-b">Date</th>
             <th className="py-2 px-4 border-b">Exercise</th>
             <th className="py-2 px-4 border-b">Duration</th>
