@@ -1,8 +1,8 @@
 import { Link } from "react-router";
-
+import Footer from "../Components/Footer";
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[url(./src/Images/im7.webp)] text-white bg-cover bg-no-repeat p-6">
       <h1 className="text-5xl font-bold mb-6">Welcome to JYM Website.! The path to your fitness.</h1>
       <p className="text-lg text-center mb-6">
         Join our platform to stay fit, track your progress, and interact with a vibrant community.
@@ -20,6 +20,7 @@ const Home = () => {
         >
           Sign In
         </Link>
+        <Footer />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../Components/Header";
 import Input from "../Components/Input";
 import FormAction from "../Components/FormAction";
+import Footer from "../Components/Footer";
 
 export default function LoginPage() {
  
@@ -48,6 +49,7 @@ export default function LoginPage() {
         />
         <FormAction handleSubmit={handleSubmit} text="Login" />
       </form>
+      <Footer />
     </div>
   );
 }

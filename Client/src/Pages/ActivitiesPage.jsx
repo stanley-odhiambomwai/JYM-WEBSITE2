@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../Components/Header";
 import Activities from "../Components/Activities";
+import Footer from "../Components/Footer";
 
 export default function ActivitiesPage() {
   return (
-    <div className="min-h-screen bg-white mt-15">
+    <div className="min-h-screen bg-white mt-20">
       <Header
         heading="JYM Activities"
         paragraph="View the latest and previous activities."
@@ -12,6 +13,7 @@ export default function ActivitiesPage() {
         linkUrl="/dashboard"
       />
       <Activities />
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../Components/Header";
 import ProgressTracker from "../Components/ProgressTracker";
+import Footer from "../Components/Footer";
 
 export default function ProgressPage() {
   return (
-    <div className="min-h-screen bg-gray-50 mt-15">
+    <div className="min-h-screen bg-gray-50 mt-20">
       <Header
         heading="Progress Tracker"
         paragraph="Keep track of your daily exercise progress."
@@ -12,6 +13,8 @@ export default function ProgressPage() {
         linkUrl="/dashboard"
       />
       <ProgressTracker />
+      <Footer />
+
     </div>
   );
 }
