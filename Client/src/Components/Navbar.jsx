@@ -10,6 +10,7 @@ const Navbar = () => {
         <li className=""><Link to="/register">Register</Link></li>
         <li className=""><Link to="/login">Login</Link></li>
         <li className=""><Link to="/activities">Activities</Link></li>
+        <li className=""><Link to="/dashboard">Dashboard</Link></li>
         <li className=""><Link to="/progress">Progress</Link></li>
         <li className=""><Link to="/community">Community</Link></li>
         <div className="w-17 h-15 rounded-full shadow-md transition duration-300 hover:shadow-lg hover:shadow-gray-400 ">
