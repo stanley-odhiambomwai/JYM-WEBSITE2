@@ -5,8 +5,9 @@ import Footer from "../Components/Footer";
 
 export default function RegisterPage() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center mt-20">
+    <div className="min-h-screen bg-[url(./src/Images/im3.webp)] bg-cover bg-no-repeat  flex flex-col justify-center mt-20 ">
       <Header 
+      className="text-blue-100"
         heading="Register on JIM"
         paragraph="Already have an account? "
         linkName="Sign In"

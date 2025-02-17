@@ -10,7 +10,7 @@ export default function Activities() {
   
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <h2 className="text-3xl font-bold mb-4">JIM Activities</h2>
+      <h2 className="text-3xl font-bold mb-4">JYM Activities</h2>
       <ul className="list-disc list-inside space-y-2">
         {activities.map((activity, index) => (
           <li key={index} className="text-lg">{activity}</li>
