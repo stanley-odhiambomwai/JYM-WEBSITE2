@@ -4,7 +4,7 @@ import Community from "../Components/Community";
 import Footer from "../Components/Footer";
 export default function CommunityPage() {
   return (
-    <div className="min-h-screen bg-white mt-20">
+    <div className="min-h-screen bg-[url(./src/Images/im2.jpeg)] bg-cover  mt-30">
       <Header
         heading="Community"
         paragraph="Share your ideas and interact with fellow users."

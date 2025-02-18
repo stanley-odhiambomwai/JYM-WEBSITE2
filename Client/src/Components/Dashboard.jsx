@@ -60,7 +60,7 @@ const activities = [
 
 export default function Dashboard() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-20  ">
       <h2 className="text-2xl font-semibold text-center text-white mb-6">
         Activity Videos
       </h2>
@@ -72,7 +72,7 @@ export default function Dashboard() {
           >
             <h3 className="text-lg font-bold mb-2">{activity.title}</h3>
             <iframe
-              className="w-full h-48 rounded-lg"
+              className="w-full h-48 rounded-lg  transition-all duration-300"
               src={activity.videoUrl}
               title={activity.title}
               allowFullScreen

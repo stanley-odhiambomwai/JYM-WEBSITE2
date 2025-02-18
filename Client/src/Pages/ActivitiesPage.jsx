@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function ActivitiesPage() {
   return (
-    <div className="min-h-screen bg-white mt-20">
+    <div className="min-h-screen bg-white mt-30">
       <Header
         heading="JYM Activities"
         paragraph="View the latest and previous activities."

@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 export const registerUser = async (req, res) => {
   const { username, email, password } = req.body;
   
-  const user = { _id: "dummyId", username, email };
+  const user = { _id: "dummyId", username, email, password };
 
   const token = jwt.sign(
     { id: user._id, email: user.email },
