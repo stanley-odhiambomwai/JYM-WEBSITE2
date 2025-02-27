@@ -17,15 +17,16 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-[url(./src/Images/im19.jpeg)] bg-cover bg-no-repeat ">
       <Header
         heading="Login to your account"
         paragraph="Don't have an account yet? "
         linkName="Register"
         linkUrl="/register"
       />
-      <form className="w-full max-w-md" onSubmit={handleSubmit}>
+      <form className="w-full max-w-md " onSubmit={handleSubmit}>
         <Input
+        className="text-white"
           handleChange={handleChange}
           value={formData.email}
           labelText="Email address"

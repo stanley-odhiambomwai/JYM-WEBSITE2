@@ -24,13 +24,13 @@ const activities = [
     id: 4,
     title: "Abs Workouts",
     videoUrl: "https://www.youtube.com/embed/Tn-XvYG9x7w?si=oX8WWaNad8GI9Yn6",
-    description: "Improve the strenthening of the stomach.",
+    description: "Improve the strenthening of the stomach and of good shape too.",
   },
   {
     id: 5,
     title: "CrossFit Training",
     videoUrl: "https://www.youtube.com/embed/no3YXyM67Gk?si=v8lEfdJRlD-DZA7F",
-    description: "Improve the transformation of crossbody fit.",
+    description: "Improve the transformation of crossbody fit and strong.",
   },
   {
     id: 6,
@@ -54,13 +54,13 @@ const activities = [
     id: 9,
     title: "Upper Body Workout",
     videoUrl: "https://www.youtube.com/embed/acp77RhVzMM?si=oQXCgp5dhV-JtyGL",
-    description: "It gives bold body appearence with full of fitness"
+    description: "It gives bold body appearence with full of fitness and with a lot of strenth"
   },
 ];
 
 export default function Dashboard() {
   return (
-    <div className="container mx-auto px-4 py-20  ">
+    <div className="container mx-auto px-4 py-20  bg-opacity-50  group-hover:opacity-100 transition duration-300 ">
       <h2 className="text-2xl font-semibold text-center text-white mb-6">
         Activity Videos
       </h2>
@@ -68,7 +68,7 @@ export default function Dashboard() {
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="bg-gray-100 p-4 rounded-lg shadow-md"
+            className="bg-gray-400 p-4 rounded-lg shadow-md"
           >
             <h3 className="text-lg font-bold mb-2">{activity.title}</h3>
             <iframe
@@ -77,7 +77,7 @@ export default function Dashboard() {
               title={activity.title}
               allowFullScreen
             ></iframe>
-            <p className="text-gray-700 mt-2">{activity.description}</p>
+            <p className="text-white mt-2  bg-gray-900">{activity.description}</p>
           </div>
         ))}
       </div>

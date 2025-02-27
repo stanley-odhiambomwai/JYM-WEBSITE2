@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function ProgressPage() {
   return (
-    <div className="min-h-screen bg-gray-50 mt-30">
+    <div className="min-h-screen bg-[url(./src/Images/im15.webp)] bg-cover pt-30">
       <Header
         heading="Progress Tracker"
         paragraph="Keep track of your daily exercise progress."

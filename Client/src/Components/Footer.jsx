@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-      <footer className=" bg-gray-900 text-white  mt-auto ">
+      <footer className="max-w-7xl  w-full sticky bg-gray-900 text-white mt-60 bottom-0 left-0">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
           <p className="text-lg font-semibold">
             "Every rep, every step, every drop of sweat brings you closer to the best version of yourself."
