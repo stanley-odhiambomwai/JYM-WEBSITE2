@@ -56,7 +56,7 @@ const activities = [
     videoUrl: "https://www.youtube.com/embed/acp77RhVzMM?si=oQXCgp5dhV-JtyGL",
     description: "It gives bold body appearence with full of fitness and with a lot of strenth"
   },
-];
+]
 
 export default function Dashboard() {
   return (

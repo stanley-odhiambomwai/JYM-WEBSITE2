@@ -3,7 +3,11 @@ import React, { useState } from "react";
 export default function ProgressTracker() {
   const [progress] = useState([
     { date: "2025-02-01", exercise: "Running", duration: "30 mins" },
-    { date: "2025-02-02", exercise: "Cycling", duration: "45 mins" }
+    { date: "2025-02-02", exercise: "Cycling", duration: "40 mins" },
+    { date: "2025-02-03", exercise: "Powerlifting", duration: "45 mins" },
+    { date: "2025-02-04", exercise: "Zumba", duration: "50 mins" },
+    { date: "2025-02-06", exercise: "Boxing", duration: "55 mins" },
+    { date: "2025-02-07", exercise: "Sauna", duration: "55 mins" }
   ]);
 
   return (

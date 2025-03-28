@@ -25,7 +25,7 @@ export default function Community() {
         <textarea
           value={newPost}
           onChange={(e) => setNewPost(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded mb-2 "
+          className="w-full bg-gray-600 p-2 border  border-gray-300 rounded mb-2 text-white "
           placeholder="Share your ideas..."
           rows="3"
         />
@@ -35,7 +35,7 @@ export default function Community() {
       </form>
       <div className="space-y-4">
         {posts.map((post) => (
-          <div key={post.id} className="p-4 border border-gray-300 rounded">
+          <div key={post.id} className="p-4 border bg-gray-600 border-gray-300 rounded">
             <p className="font-semibold">{post.user}</p>
             <p>{post.content}</p>
           </div>

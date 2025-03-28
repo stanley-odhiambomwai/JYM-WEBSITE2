@@ -1,6 +1,7 @@
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
+import { useFetchMessage } from "./Services/Api"; 
 import Home from "./Pages/Home";
 import Layout from "./Components/Layout";
 import LoginPage from "./Pages/Login";
@@ -11,8 +12,13 @@ import ProgressPage from "./Pages/ProgressPage";
 import CommunityPage from "./Pages/CommunityPage";
 
 function App() {
+  const message = useFetchMessage();
+
+
   return (
+    <>
     <BrowserRouter>
+     <p>{message}</p> 
       <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -25,6 +31,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    
+    </>
   );
 }
 

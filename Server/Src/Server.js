@@ -30,7 +30,7 @@ app.use("/api/progress", progressRoutes);
 app.use("/api/community", communityRoutes);
 
 
-app.get("/", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.send("JYM Backend API is running");
 });
 
