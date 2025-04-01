@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[url(./src/Images/im9.jpeg)] p-4 text-white fixed top-0 left-0 w-full">
+    <nav className="bg-[url(/Images/im9.jpeg)] p-4 text-white fixed top-0 left-0 w-full">
       <ul className="flex space-x-4">
         <li className=""><Link to="/">Home</Link></li>
         <li className=""><Link to="/register">Register</Link></li>

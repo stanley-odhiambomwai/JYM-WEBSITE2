@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function RegisterPage() {
   return (
-    <div className="min-h-screen bg-[url(./src/Images/im3.webp)] bg-cover bg-no-repeat  flex flex-col justify-center pt-30 ">
+    <div className="min-h-screen bg-[url(/Images/im3.webp)] bg-cover bg-no-repeat  flex flex-col justify-center pt-30 ">
       <Header 
       className="text-blue-100"
         heading="Register on JIM"
