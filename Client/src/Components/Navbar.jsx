@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[url(/Images/im12.jpg)] p-4 text-white fixed top-0 left-0 w-full">
+    <nav className="bg-[url(/Images/im9.jpeg)] p-4 text-white fixed top-0 left-0 w-full">
       <ul className="flex space-x-4">
         <li className=""><Link to="/">Home</Link></li>
         <li className=""><Link to="/register">Register</Link></li>
@@ -14,7 +14,7 @@ const Navbar = () => {
         <li className=""><Link to="/progress">Progress</Link></li>
         <li className=""><Link to="/community">Community</Link></li>
         <div className="w-17 h-15 rounded-full shadow-md transition duration-300 hover:shadow-lg hover:shadow-gray-400 ">
-          <img src="./src/Images/im12.jpg"/>
+          <img src="/Images/im12.jpg"/>
         </div>
         <div  className="flex justify-end text-3xl space-x-4 container mx-auto">
             <li><Link to="https://x.com/Stanleymwai1481" target="_blank" rel="noopener noreferrer">
