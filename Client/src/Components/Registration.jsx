@@ -1,25 +1,35 @@
 import React, { useState } from "react";
+import axios from "axios";
 import PaymentSection from "./PaymentSection";
 import Input from "./Input";
 import FormAction from "./FormAction";
 import { registrationFields } from "../Constants/RegistrationField";
 
-let initialState = {};
+const initialState = {};
 registrationFields.forEach(field => (initialState[field.id] = ""));
 
 export default function Registration() {
   const [formState, setFormState] = useState(initialState);
   const [paymentDone, setPaymentDone] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
- 
-    console.log("User registration data: ", formState);
-    alert("Registration successful!");
+    setError(null);
+
+    try {
+      const response = await axios.post("http://localhost:5000/auth/register", formState, {
+        withCredentials: true,
+      });
+
+      alert(response.data.message);
+    } catch (error) {
+      setError(error.response?.data?.message || "Registration failed");
+    }
   };
 
   return (
@@ -29,6 +39,7 @@ export default function Registration() {
       ) : (
         <div className="mb-4">
           <h2 className="text-2xl font-semibold mb-4">Complete Registration</h2>
+          {error && <p className="text-red-500">{error}</p>}
           <form onSubmit={handleSubmit}>
             {registrationFields.map((field) => (
               <Input
